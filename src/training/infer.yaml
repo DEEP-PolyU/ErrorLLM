@@ -1,0 +1,30 @@
+model_name_or_path: model/codes-7b-ext
+trust_remote_code: true
+
+adapter_name_or_path: output/error_detector
+
+stage: error_detection
+do_train: false
+do_predict: true
+finetuning_type: lora
+
+use_constrained_decoding: true
+constraint_type: ordered
+freeze_original_embeddings: true
+
+dataset_dir: src/training
+eval_dataset: error_detection_bird_infer
+template: default
+cutoff_len: 4096
+preprocessing_num_workers: 8
+dataloader_num_workers: 4
+
+output_dir: output/error_detector_inference
+overwrite_output_dir: true
+
+per_device_eval_batch_size: 4
+predict_with_generate: true
+
+max_new_tokens: 4
+do_sample: false
+skip_special_tokens: false

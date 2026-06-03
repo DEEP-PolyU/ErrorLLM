@@ -1,0 +1,18 @@
+{
+  "error_detection_bird": {
+    "file_name": "data/finetune/detect/bird/ft_detect.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  },
+  "error_detection_bird_infer": {
+    "file_name": "data/finetune/detect/bird/infer_detect.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}
