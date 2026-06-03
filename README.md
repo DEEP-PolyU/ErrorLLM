@@ -1,4 +1,4 @@
-# ErrorLLM - Modeling SQL Errors for Text-to-SQL Refinement
+# ErrorLLM - Modeling SQL Errors
 The complete source code for SIGKDD2026 research track accepted paper: "ErrorLLM: Modeling SQL Errors for Text-to-SQL Refinement". 
 
 ## Enviourmental Setups
